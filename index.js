@@ -93,23 +93,6 @@ dogFeeder(15, 1);
 // // use math.random to determine the computers choice
 // // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number
 
-const game = ("play") => {
-  if ("rock") {
-    console.log("you won");
-  }else {
-      console.log("you lost")
-  }
-} else if ("paper") {
-    console.log("you won")
-    } else {
-        console.log("you lost")
-    }
-    else if ("sissors") {
-        console.log("you won")
-        } else {
-            console.log("you lost")
-        }
-
 // /************************************************************** Task 5 **************************************************************/
 // //Metric Converter
 // //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
@@ -141,6 +124,22 @@ centimeters(5);
 // //70s should be Cs
 // //60s should be D
 // //and anything below 60 should be F
+
+const gradeCalculator = (grade) => {
+  if (grade >= 90) {
+    console.log("A");
+  } else if (grade >= 80) {
+    console.log("B");
+  } else if (grade >= 70) {
+    console.log("C");
+  } else if (grade >= 60) {
+    console.log("D");
+  } else {
+    console.log("F");
+  }
+};
+
+gradeCalculator(88);
 
 // /************************************************************** Stretch **************************************************************/
 // //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
