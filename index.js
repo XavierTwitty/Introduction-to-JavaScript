@@ -91,7 +91,17 @@ dogFeeder(15, 1);
 // // Your function should take a string (either rock paper or sissors)
 // // it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
 // // use math.random to determine the computers choice
-// // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number
+// // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
+
+
+var choice = "" ; 
+
+const rPS = (choice) => console.log {
+
+
+}
+
+
 
 // /************************************************************** Task 5 **************************************************************/
 // //Metric Converter
@@ -111,17 +121,41 @@ centimeters(5);
 // // 99 bottles of soda on the wall
 // // create a function called annoyingSong
 // // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
+const annoyingSong = (number, newNumber) => {
+  var newNumber = number - 1;
 
-// function annoyingSong(99,i) {
+  for (let i = 99; i >= 99; i--) {
+    console.log(
+      `${number} bot tle of beer on the wall , take one down pass it around ${newNumber}`
+    );
+  }
+};
 
-// }
+annoyingSong(99);
+annoyingSong(98);
+annoyingSong(97);
+
+// function flip(repeat){
+//   for (let i = 0; i < repeat; i++){
+//     var coinFlip = Math.round(Math.random());
+//     if (coinFlip === 1){
+//       console.log("Heads");
+//     }
+//     else{
+//       console.log("Tails");
+//     }
+
+//   }
+//   }
+
+//   flip(100);
 
 // /************************************************************** Task 7 **************************************************************/
 // //Grade Calculator
 // //write a javaScript program that takes a mark out of 100 and returns a corisponding letter grade
 // //90s should be A
 // //80s should be B
-// //70s should be Cs
+// //70s should be C
 // //60s should be D
 // //and anything below 60 should be F
 
