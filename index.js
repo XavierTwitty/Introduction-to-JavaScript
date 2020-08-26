@@ -91,18 +91,51 @@ dogFeeder(15, 1);
 // // Your function should take a string (either rock paper or sissors)
 // // it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
 // // use math.random to determine the computers choice
-// // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
+// // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number
 
+const rPS = (choice) => {
+  choice = choice.toLowerCase();
+  let computerChoice = math.floor(math.random() * 3);
 
-var choice = "" ; 
+  if (choice === "rock") {
+    choice = 0;
+  } else if (choice === "paper") {
+    choice = 1;
+  } else if (choice === "sissors") {
+    choice = 2;
+  } else {
+    console.log("choose rock , paper or sissors");
+  }
+  if (computerChoice === 0) {
+    if (choice === 0) {
+      console.log(" tie. play again");
+    }
+  } else if (computerChoice === 1) {
+    console.log("you lost");
+  } else if (computerChoice === 2) {
+    console.log("you won");
+  }
+  if (computerChoice === 1) {
+    if (choice === 1) {
+      console.log(" tie. play again");
+    }
+  } else if (computerChoice === 2) {
+    console.log("you lost");
+  } else if (computerChoice === 0) {
+    console.log("you won");
+  }
+  if (computerChoice === 2) {
+    if (choice === 2) {
+      console.log(" tie. play again");
+    }
+  } else if (computerChoice === 0) {
+    console.log("you lost");
+  } else if (computerChoice === 1) {
+    console.log("you won");
+  }
+};
 
-const rPS = (choice) => console.log {
-
-
-}
-
-
-
+rPs();
 // /************************************************************** Task 5 **************************************************************/
 // //Metric Converter
 // //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
@@ -179,6 +212,10 @@ gradeCalculator(88);
 // //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
 // // Hint - you may need to study tomorrow's traning kit on arrays
 // // try looking up the .includes() method
+
+const countVowels = (string) => {
+  word = "";
+};
 
 // /************************************************************** Stretch **************************************************************/
 // //Take Rock, Paper, Sissors further
